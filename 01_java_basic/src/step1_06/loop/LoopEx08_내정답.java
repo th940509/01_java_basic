@@ -1,4 +1,5 @@
 package step1_06.loop;
+//2021/03/24 17:07 ~ 17:36 
 
 import java.util.Scanner;
 
@@ -45,8 +46,47 @@ public class LoopEx08_내정답 {
 			System.out.print("메뉴 선택 : ");
 			int selectMenu = scan.nextInt();
 			
-			if (selectMenu == 1) {}
-			else if (selectMenu == 2) {}
+			if (selectMenu == 1) {
+				if(identifier == -1) {
+					System.out.print("ID: ");
+					int id = scan.nextInt();
+					System.out.print("PW: ");
+					int pw = scan.nextInt();
+				
+					if(id == dbAcc1 && pw == dbPw1) {
+						System.out.println(dbAcc1 + "유저님 환영합니다.");
+						identifier = 1;
+					}
+					if(id == dbAcc2 && pw == dbPw2) {
+						System.out.println(dbAcc2 + "유저님 환영합니다.");
+						identifier = 2;
+					}
+					else if (identifier == 1) {
+						System.out.println("현재" + dbAcc1 + "유저님 로그인중....");
+					}
+				else if (identifier == 2) {
+					System.out.println("현재" + dbAcc2 + "유저님 로그인중....");
+				}
+					
+				else if (id != dbAcc1 || pw != dbPw1) {
+					System.out.println("ID, PW를 확인하세요");
+				}
+				else if (id != dbAcc2 || pw != dbPw2) {
+				System.out.println("ID, PW를 확인하세요");
+				}
+				}	
+			}
+			
+			
+			else if (selectMenu == 2) {
+				if(identifier == 1 || identifier ==2) {
+					System.out.println("로그아웃 되셨습니다.");
+				}
+				else if(identifier == -1) {
+					System.out.println("로그인 후 이용해주세요");
+				}
+			}
+			
 			else if (selectMenu == 0) {
 				isRun = false;
 				System.out.println("프로그램 종료");
