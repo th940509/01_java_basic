@@ -57,6 +57,7 @@ public class LoopEx03_내정답 {
 		
 		System.out.println("개수= " + num);
 
+		
 	}
 
 }
