@@ -1,5 +1,5 @@
 package step1_06.loop;
-
+//2021/03/24 22:10 ~ 22:37
 import java.util.Scanner;
 
 /*
@@ -43,10 +43,49 @@ public class LoopEx09_내정답 {
 			System.out.print("메뉴 선택 : ");
 			int selectMenu = scan.nextInt();
 			
-			if (selectMenu == 1) {}
-			else if (selectMenu == 2) {}
-			else if (selectMenu == 3) {}
-			else if (selectMenu == 4) {}
+			if (selectMenu == 1) {
+				System.out.print("입금할 금액을 입력해주세요: ");
+				int depositCash = scan.nextInt();
+				myMoney += depositCash;
+				System.out.println("잔액은" + myMoney + "원 입니다.");
+			}
+			
+			
+			else if (selectMenu == 2) {
+				System.out.print("출금할 금액을 입력해주세요: ");
+				int withDrawal = scan.nextInt();
+					if (myMoney < withDrawal) {
+						System.out.println("출금불가");
+					}
+					else {
+						System.out.println("잔액은" + (myMoney - withDrawal) + "원 입니다");
+						myMoney -= withDrawal;
+					}
+			}
+			
+			
+			else if (selectMenu == 3) {
+				System.out.print("계좌를 입력하세요: ");
+				int accountNumber = scan.nextInt();
+				 if (accountNumber == yourAcc) {
+					 System.out.print("이체할 금액을 입력하세요: ");
+					 int transferMoney = scan.nextInt();
+					  if(myMoney < transferMoney) {
+						  System.out.println("이체불가");
+					  }
+					  else {
+						  System.out.println("잔액은" + (myMoney - transferMoney) + "원 입니다.");
+						  yourMoney += transferMoney;
+					  }
+				 }
+				 else {System.out.println("계좌번호를 확인해주세요.");}
+			}
+			
+			
+			else if (selectMenu == 4) {
+				System.out.println("my Acc 잔액은: " + myMoney + "원 입니다.");
+				System.out.println("your Acc 잔액은: " + yourMoney + "원 입니다.");
+			}
 			else if (selectMenu == 0) {
 				isRun = false;
 				System.out.println("프로그램 종료");

@@ -1,5 +1,5 @@
 package step1_06.loop;
-
+//2021/03/24 22:37 ~ 23:30
 import java.util.Scanner;
 
 /*
@@ -52,12 +52,127 @@ public class LoopEx10_내정답 {
 			System.out.print("메뉴 선택 : ");
 			int sel = scan.nextInt();
 			
-			if (sel == 1) {}
-			else if (sel == 2) {}
-			else if (sel == 3) {}
-			else if (sel == 4) {}
-			else if (sel == 5) {}
-			else if (sel == 6) {}
+			if (sel == 1) {
+				if (identifier == -1) {
+					System.out.print("계좌번호: ");
+					int accountNumber = scan.nextInt();
+					System.out.print("PW: ");
+					int pw = scan.nextInt();
+						if (accountNumber == dbAcc1 && pw == dbPw1) {
+							System.out.println("로그인에 성공하셨습니다.");
+							identifier = 1;
+						}
+						else if (accountNumber == dbAcc2 && pw == dbPw2) {
+							System.out.println("로그인에 성공하셨습니다.");
+							identifier = 2;
+						}
+						else { 
+							System.out.println("계좌번호와 PW를 확인해주세요.");
+						}
+					
+				}
+				else {System.out.println("로그인 중입니다...");}
+			}
+			
+			
+			else if (sel == 2) {
+				if (identifier != -1) {
+					System.out.println("로그아웃이 완료되었습니다.");
+				}
+				else if (identifier == -1) {
+					System.out.println("로그인 후 이용이 가능합니다.");
+				}
+			}
+			
+			
+			else if (sel == 3) {
+				if (identifier == 1) {
+					System.out.print("입금할 금액을 입력하세요: ");
+					int depositMoney = scan.nextInt();
+					System.out.println("dbAcc1 잔액은" + (dbMoney1 + depositMoney) + "원 입니다.");
+					dbMoney1 += depositMoney;
+				}
+				else if (identifier == 2) {
+					System.out.print("입금할 금액을 입력하세요: ");
+					int depositMoney = scan.nextInt();
+					System.out.println("dbAcc2 잔액은" + (dbMoney2 + depositMoney) + "원 입니다.");
+					dbMoney2 += depositMoney;
+				}
+				else {
+					System.out.println("로그인 후 이용이 가능합니다.");
+				}
+			}
+			
+			
+			else if (sel == 4) {
+				if (identifier == 1) {
+					System.out.print("출금할 금액을 입력하세요: ");
+					int withDrawalMoney = scan.nextInt();
+					System.out.println("dbAcc1 잔액은" + (dbMoney1 - withDrawalMoney) + "원 입니다.");
+					dbMoney1 -= withDrawalMoney;
+				}
+				else if (identifier == 2) {
+					System.out.print("출금할 금액을 입력하세요: ");
+					int withDrawalMoney = scan.nextInt();
+					System.out.println("dbAcc2 잔액은" + (dbMoney2 - withDrawalMoney) + "원 입니다.");
+					dbMoney2 -= withDrawalMoney;
+				}
+				else {
+					System.out.println("로그인 후 이용이 가능합니다.");
+				}
+			}
+			
+			else if (sel == 5) {
+				if (identifier == 1) {
+					System.out.println("이체할 계좌번호를 입력하세요: ");
+					int transferNumber = scan.nextInt();
+						if(transferNumber == dbAcc2) {
+							System.out.print("이체할 금액을 입력하세요: ");
+							int transferMoney = scan.nextInt();
+								if (dbMoney1 >= transferMoney) {
+									System.out.println("dbAcc1 잔액은" + (dbMoney1 - transferMoney) + "원 입니다.");
+									dbMoney1 -= transferMoney;
+								}
+								else {
+									System.out.println("이체불가");
+								}
+						}
+						else {System.out.println("이체할 계좌를 다시 확인하세요.");}
+						
+				}
+				else if (identifier == 2) {
+					System.out.println("이체할 계좌번호를 입력하세요: ");
+					int transferNumber = scan.nextInt();
+						if(transferNumber == dbAcc1) {
+							System.out.print("이체할 금액을 입력하세요: ");
+							int transferMoney = scan.nextInt();
+								if (dbMoney2 >= transferMoney) {
+									System.out.println("dbAcc2 잔액은" + (dbMoney2 - transferMoney) + "원 입니다.");
+									dbMoney2 -= transferMoney;
+								}
+								else {
+									System.out.println("이체불가");
+								}
+						}
+						else {System.out.println("이체할 계좌를 다시 확인하세요.");}
+				}
+				else {
+					System.out.println("로그인 후 이용이 가능합니다.");
+				}
+			}
+			
+			
+			else if (sel == 6) {
+				if (identifier == 1) {
+					System.out.println("dbAcc1 잔액은" + dbMoney1 + "원 입니다.") ;
+				}
+				else if (identifier == 2) {
+					System.out.println("dbAcc2 잔액은" + dbMoney2 + "원 입니다.") ;
+				}
+				else {
+					System.out.println("로그인 후 이용이 가능합니다.");
+				}
+			}
 			else if (sel == 0) {
 				isRun = false;
 				System.out.println("프로그램 종료");
