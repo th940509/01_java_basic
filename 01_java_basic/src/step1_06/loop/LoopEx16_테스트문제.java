@@ -1,6 +1,6 @@
 package step1_06.loop;
-import java.util.Random;
 //2021/03/25 17:07 ~ 
+import java.util.Random;
 import java.util.Scanner;
 
 /*
@@ -62,26 +62,36 @@ public class LoopEx16_테스트문제 {
 			System.out.print("메뉴 선택 : ");
 			int selectMenu = scan.nextInt();
 			
-			if (selectMenu == 1) {
-				System.out.print("동(1), 서(2), 남(3), 북(4) 방향 설정: ");
-				dir = scan.nextInt();
-			}
-			
-			else if (selectMenu == 2) {
-				System.out.print("속도 설정 [1-3]: ");
-				speed = scan.nextInt();
-			}
-			else if (selectMenu == 3) {
-				if(dir == 1) x += speed; 
-			 	if(dir == 2) x -= speed; 
-			 	if(dir == 3) y += speed; 
-			 	if(dir == 4) y -= speed;
-			 	
-			 	if(x==desX && y==desY) {
-			 		System.out.println("도착했습니다.");
-			 }
+				if (selectMenu == 1) {
+					System.out.print("동(1), 서(2), 남(3), 북(4) 방향 설정: ");
+					dir = scan.nextInt();
+					if (dir==1) x += speed;
+					if (dir==2) x -= speed;
+					if (dir==3) y -= speed;
+					if (dir==4) y += speed;
+				}
 				
-			}
+				else if (selectMenu == 2) {
+					System.out.print("속도 설정 [1-3]: ");
+					speed = scan.nextInt();
+				}
+					
+				
+				
+				else if (selectMenu == 3) {
+					if(dir != 0 && speed != 0) {
+						if(dir==1) { x += speed; }
+						if(dir==2) { x -= speed; }
+						if(dir==3) { y -= speed; }
+						if(dir==4) { y += speed; }
+						
+					}
+				}
+				 	if(x==desX && y==desY) {
+				 		System.out.println("도착했습니다.");
+				 	}
+					
+			
 			
 			scan.close();
 		}

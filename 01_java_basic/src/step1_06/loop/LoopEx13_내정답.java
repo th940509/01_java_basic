@@ -1,5 +1,5 @@
 package step1_06.loop;
-//2021/03/25 16:39 ~ 
+//2021/03/25 23:08 ~ 23:20
 /*
  * # 소수찾기[1단계]
  * 
@@ -24,27 +24,22 @@ public class LoopEx13_내정답 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		boolean isRunning = true;
 		
+		System.out.println("정수를 입력하세요: ");
+		int myNum = scan.nextInt();
+		int num = 1;
+		int count = 0;
 		
-		while(isRunning) {
-			
-			System.out.println("정수를 입력하세요: ");
-			int myNum = scan.nextInt();
-			int num = 1;
-			int count = 0;
-			
+		while (myNum >= num) {
 			if (myNum % num == 0) {
-				count ++; 
-				num ++;	
+				num ++;
+				count ++;
 			}
-			else if (myNum % num != 0) {num ++;}
-			
-			
-		
-			if (count == 2) {System.out.println(myNum+"은 소수 입니다.");}
-			else if (count != 2) {System.out.println(myNum + "은 소수가 아닙니다.");}
+			else { num ++; }
 		}
+		
+		if (count == 2) {System.out.println(myNum + "은 소수입니다");}
+		else {System.out.println(myNum + "은 소수가 아닙니다.");}
 		
 		scan.close();
 
