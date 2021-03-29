@@ -21,7 +21,9 @@ package step1_06.loop;
 public class LoopEx24_내정답 {
 
 	public static void main(String[] args) {
+		
+		}
 
 	}
 
-}
+

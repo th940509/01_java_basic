@@ -36,11 +36,11 @@ public class LoopEx22_내정답 {
 		 * ###
 		 */
 		
-		for (int k = 0; k < 3; k++) {
-			for (int l = 0; l <= k; l++) {
+		for (int i = 0; i < 3; i ++) {
+			for (int j = 0; j < i+1; j++) {
 				System.out.print("#");
 			}
-		System.out.println();
+			System.out.println();
 		}
 
 		
@@ -51,11 +51,7 @@ public class LoopEx22_내정답 {
 		 * ###
 		 */
 		
-		for (int k = 0; k < 3; k++) {
-			for (int l = 0; l+1 >= k ; l++) {
-				System.out.println(" ");
-			}
-		}
+		
 		
 		
 		/*
