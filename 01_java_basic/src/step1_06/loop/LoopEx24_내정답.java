@@ -22,8 +22,11 @@ public class LoopEx24_내정답 {
 
 	public static void main(String[] args) {
 		
+			}
+		
+		
 		}
 
-	}
+	
 
 
