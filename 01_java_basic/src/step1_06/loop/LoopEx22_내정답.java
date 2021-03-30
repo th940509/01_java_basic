@@ -1,5 +1,5 @@
 package step1_06.loop;
-//2021/03/26 16:21 ~ 
+//2021/03/31 00:05 ~ 
 
 // # 삼각형 그리기
 
@@ -43,6 +43,7 @@ public class LoopEx22_내정답 {
 			System.out.println();
 		}
 
+		System.out.println();
 		
 		/*
 		 * 문제 2)
@@ -50,8 +51,16 @@ public class LoopEx22_내정답 {
 		 *  ##
 		 * ###
 		 */
+		for (int i=0; i<3; i++) {
+			for(int j=0; j<3-(i+1); j++)
+				System.out.print(" ");
+			for(int j=0; j<1+i; j++) {
+				System.out.print("#");
+			}
+			System.out.println();
+		}
 		
-		
+		System.out.println();
 		
 		
 		/*
@@ -61,6 +70,16 @@ public class LoopEx22_내정답 {
 		 * #
 		 */
 
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 3-i; j++) {
+				System.out.print("#");
+			}
+			for(int j = 0; j < i; j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
 		
 		/*
 		 * 문제 4)
@@ -68,7 +87,17 @@ public class LoopEx22_내정답 {
 		 *  ##
 		 *   #
 		 */
-
+		
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < i; j++) {
+				System.out.print(" ");
+			}
+			for(int j = 0; j < 3-i; j++) {
+				System.out.print("#");
+			}
+			System.out.println();
+		}
+		System.out.println();
 		
 		/*
 		 * 문제 5)
@@ -84,7 +113,19 @@ public class LoopEx22_내정답 {
 		 *  ###
 		 * #####
 		 */
-
+		
+		int k = 0;
+		for(int i = 0; i < 3; i ++) {
+			for(int j = 0; j < 2-i; j++) {
+				System.out.print(" ");
+			}
+			for(int j = 0; j < 1+k; j++) {
+				System.out.print("#");
+			}
+			k +=2;
+			System.out.println();
+		}
+		
 		/*
 		 * 문제 7)
 		 *  #####
