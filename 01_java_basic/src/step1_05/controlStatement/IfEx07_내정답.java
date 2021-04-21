@@ -2,6 +2,7 @@ package step1_05.controlStatement;
 //2021/03/19 16:12 ~ 16:20
 //2021/03/22 23:30 ~ 23:33(if사용)
 //2021/03/22 23:24 ~ 23:30(else, else if사용)
+//2021/04/21 18:15 ~ 18:17
 
 import java.util.Scanner;
 
@@ -21,11 +22,17 @@ public class IfEx07_내정답 {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("성적을 입력하세요: ");
-		int grade = scan.nextInt();
+		int score = scan.nextInt();
 		
-		if(60 <= grade && grade <=100)System.out.println("합격");
-		if(0 <= grade && grade < 60)System.out.println("불합격");
-		if(grade < 0 || 100 < grade)System.out.println("성적을 잘못 입력하셨습니다.");
+		if(score >= 60) {
+			System.out.println("합격!");
+		}
+		if(score < 60 ) {
+			System.out.println("불합격!");
+		}
+		if(score < 0 || score > 100) {
+			System.out.println("성적을 잘못 입력했습니다!");
+		}
 		
 		scan.close();
 		

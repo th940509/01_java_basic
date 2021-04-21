@@ -1,5 +1,5 @@
 package step1_03.operator;
-//2021/04/21 14:20 ~ 
+//2021/04/21 14:20 ~ 14:40
 public class OpEx06_내정답 {
 	
 	public static void main(String[] args) {

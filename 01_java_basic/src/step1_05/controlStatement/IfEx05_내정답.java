@@ -1,5 +1,6 @@
 package step1_05.controlStatement;
 //2021/03/22 23:08 ~ 23:14 
+//2021/04/21 17:54 ~ 18:10
 
 import java.util.Scanner;
 
@@ -21,26 +22,27 @@ public class IfEx05_내정답 {
 	int dbId = 0;
 	int dbPw = 0;
 	
-	System.out.println("회원가입을 진행합니다");
-	System.out.print("ID를 입력하세요: ");
+	System.out.println("회원가입을 진행합니다.");
+	System.out.print("Id 입력: ");
 	dbId = scan.nextInt();
 	
-	System.out.print("Pw를 입력하세요: ");
+	System.out.print("Pw 입력: ");
 	dbPw = scan.nextInt();
+			
 	System.out.println("회원가입이 완료되었습니다.");
 	
-	System.out.print("ID: ");
-	int id02 = scan.nextInt();
+	System.out.print("[로그인] ID: ");
+	int myId = scan.nextInt();
 	
-	System.out.print("PW: ");
-	int pw02 = scan.nextInt();
-
-		
-	if(id02 == dbId && pw02 == dbPw)System.out.println("로그인 성공");
-	if(id02 != dbId && pw02 == dbPw)System.out.println("로그인 실패");
-	if(id02 == dbId && pw02 != dbPw)System.out.println("로그인 실패");
-	if(id02 != dbId && pw02 != dbPw)System.out.println("로그인 실패");
+	System.out.print("[로그인 ] PW: ");
+	int myPw = scan.nextInt();
 	
+	if(dbId == myId && dbPw == myPw) {
+		System.out.println("로그인 성공");
+	}
+	if(dbId != myId || dbPw !=myPw) {
+		System.out.println("로그인 실패");
+	}
 	scan.close();
 	
 		

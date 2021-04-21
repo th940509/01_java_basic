@@ -1,6 +1,7 @@
 package step1_05.controlStatement;
 //2021/03/19 16:00 ~ 16:08
 //2021/03/22 23:15 ~ 23:23
+//2021/04/21 18:10 ~ 18:14
 
 import java.util.Scanner;
 
@@ -20,18 +21,21 @@ public class IfEx06_내정답 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("숫자1을 입력하세요: ");
+		System.out.print("숫자1 입력: ");
 		int num1 = scan.nextInt();
 		
-		System.out.print("숫자2를 입력하세요: ");
+		System.out.print("숫자2 입력:");
 		int num2 = scan.nextInt();
 		
-		System.out.print("정답 = ");
+		System.out.println("정답: ");
 		int result = scan.nextInt();
 		
-		if(result == num1 * num2) System.out.println("정답");
-		if(result != num1 * num2) System.out.println("땡");
-		
+		if(result == num1*num2) {
+			System.out.println(" 정답!");
+		}
+		if(result != num1*num2) {
+			System.out.println("땡!");
+		}
 		scan.close();
 		
 		
