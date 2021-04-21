@@ -1,5 +1,7 @@
 package step1_05.controlStatement;
 //2021/03/17 15:32 ~ 15:41
+//2021/04/21 14:37 ~ 14:42
+
 import java.util.Scanner;
 
 /*
@@ -18,17 +20,16 @@ public class IfEx04_내정답 {
 		int dbId = 1234;
 		int dbPw = 1111;
 
-		System.out.print("Id 입력: ");
+		System.out.print("ID: ");
 		int id = scan.nextInt();
 		
-		System.out.print("Pw 입력: ");
+		System.out.print("PW: ");
 		int pw = scan.nextInt();
 		
-		if(id == dbId && pw == dbPw)System.out.println("로그인 성공");
-		if(id != dbId && pw == dbPw)System.out.println("로그인 실패");
-		if(id != dbId && pw != dbPw)System.out.println("로그인 실패");
-		if(id != dbId && pw != dbPw)System.out.println("로그인 실패");
-		if(id != dbId && pw != dbPw)System.out.println("로그인 실패");
+		if(dbId == id && dbPw == pw) {System.out.println("로그인 성공!");}
+		if(dbId != id && dbPw == pw) {System.out.println("로그인 실패");}
+		if(dbId == id && dbPw != pw) {System.out.println("로그인 실패");}
+		if(dbId != id && dbPw != pw) {System.out.println("로그인 실패");}
 		
 		
 		scan.close();

@@ -1,5 +1,7 @@
 package step1_05.controlStatement;
 //2021/03/19 22:39 ~ 22:44
+//2021/04/21 14:29 ~ 14:32
+
 import java.util.Scanner;
 
 /*
@@ -17,15 +19,22 @@ public class IfEx02_내정답 {
 
 	public static void main(String[] args) {
 
+		int com = 8;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("숫자를 입력하세요 = ");
+		
+		System.out.println("숫자 입력: " );
 		int me = scan.nextInt();
 		
-		int com = 8;
+		if(me < com) {
+			System.out.println("UP!");
+		}
+		if(me == com) {
+			System.out.println("BINGO!");
+		}
 		
-		if(me<com) System.out.println("UP!");
-		if(me==com) System.out.println("Bingo!");
-		if(me>com) System.out.println("Down");
+		if(me > com) {
+			System.out.println("DOWN");
+		}
 		
 		scan.close();
 		

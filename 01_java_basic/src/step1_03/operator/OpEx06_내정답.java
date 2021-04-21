@@ -1,11 +1,12 @@
 package step1_03.operator;
-
-public class OpEx06_문제 {
+//2021/04/21 14:20 ~ 
+public class OpEx06_내정답 {
 	
 	public static void main(String[] args) {
 		
 		// 예) 3의 배수이면서, 짝수이면 true 출력
 		int num = 12;
+		System.out.println(num % 3 == 0 && num % 2 == 0);
 		
 		
 		
@@ -15,6 +16,7 @@ public class OpEx06_문제 {
 		int kor = 100;
 		int eng = 87;
 		int math = 41;
+		System.out.println((kor+eng+math)/3 >= 60 && kor >= 50 && eng >= 50 && math >= 50);
 
 		
 		
@@ -25,6 +27,7 @@ public class OpEx06_문제 {
 		int height2 = 200;
 		int weight2 = 68;
 
-
+		System.out.println(height1 >= 200 || weight1 >= 200);
+		System.out.println(height2 >= 200 || weight2 >= 200);
 	}
 }

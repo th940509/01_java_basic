@@ -2,6 +2,7 @@ package step1_02.variable;
 
 // 산술 연산자 하고 와서 진행
 //2021/03/17 16:50 ~ 17:10 (문제1-4)
+//2021/04/21 14:07 ~ 14:12 
 
 public class VarEx02_내정답 {
 
@@ -40,6 +41,10 @@ public class VarEx02_내정답 {
 		
 		//문제5) 800원에서 500원짜리 개수 , 100원짜리 개수
 		int fivehundred = 500;
+		int onehundred = 100;
+		int cash2 = 800;
+		System.out.println("500원 개수 = " + cash2 / fivehundred);
+		System.out.println("100원 개수 = " + (cash2 % fivehundred) / onehundred);
 		//정답5) 500원(1개), 100원(3개) 
 
 
