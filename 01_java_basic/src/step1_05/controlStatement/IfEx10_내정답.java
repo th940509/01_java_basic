@@ -1,6 +1,7 @@
 package step1_05.controlStatement;
 //2021/03/19 16:56 ~ 17:12
 //2021/03/22 23:41 ~ 23:51(else사용)
+//2021/04/22 13:53 ~ 14:01
 /*
  * # 로그인[3단계]
  * 
@@ -24,15 +25,23 @@ public class IfEx10_내정답 {
 		System.out.print("ID를 입력하세요: ");
 		int id = scan.nextInt();
 		
-		if(id == dbId) {
+		if(dbId == id) {
 			System.out.println("PW를 입력하세요: ");
 			int pw = scan.nextInt();
-				if(pw == dbPw) System.out.print("로그인 성공!");
-				if(pw != dbPw) System.out.print("PW를 확인해주세요");
+			if(dbPw == pw) {
+				System.out.println("로그인 성공!");
 			}
+			if(dbPw != pw) {
+				System.out.println("pw를 확인해주세요");
+			}
+		}
+		if(dbId != id) {
+			System.out.println("ID를 확인해주세요");
+		}
 		
-		if(id != dbId) System.out.print("ID를 확인해주세요");
-				
+		
+		
+		
 		scan.close();
 		}
 			

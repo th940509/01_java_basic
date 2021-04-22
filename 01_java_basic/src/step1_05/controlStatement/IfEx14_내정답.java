@@ -1,6 +1,7 @@
 package step1_05.controlStatement;
 //2021/03/22 15:45 ~ 15:57
 //2021/03/23 00:07 ~ 00:18
+//2021/04/22 14:25 ~ 14:32
 
 import java.util.Random;
 import java.util.Scanner;
@@ -17,28 +18,28 @@ public class IfEx14_내정답 {
 
 	public static void main(String[] args) {
 	
-		Random ran = new Random();
-		Scanner scan = new Scanner(System.in);
+	Random ran = new Random();
+	Scanner scan = new Scanner(System.in);
 		
-		int coin = ran.nextInt(2);
-		
-		System.out.println("동전 앞면(0), 뒷면(1)을 입력하세요: ");
-		int z = scan.nextInt();
-		
-		System.out.println(coin);
-		
-		if(z == 0) {
-			if(coin == 0) {System.out.println("앞면 정답!");
-			} else {System.out.println("땡");
-			}
+	int coin = ran.nextInt(2);
+	
+	System.out.println("앞면(0), 뒷면(1) 입력: ");
+	int answer = scan.nextInt();
+	
+	if(coin == 1) {
+		if(answer == 1) {
+			System.out.println("뒷면 정답!");
+		} else {
+			System.out.println("땡!");
 		}
-		
-		if(z == 1) {
-			if(coin == 1) {System.out.println("뒷면 정답!");
-			} else {System.out.println("땡");
-			}
+	}
+	if(coin == 0) {
+		if(answer == 0) {
+			System.out.println("앞면 정답!");
+		} else {
+			System.out.println("땡!");
 		}
-		
+	}
 		scan.close();
 		
 	}
