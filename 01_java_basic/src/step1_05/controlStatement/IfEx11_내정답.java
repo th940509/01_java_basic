@@ -1,5 +1,6 @@
 package step1_05.controlStatement;
-// 2021/03/22 23:53 ~ 00:02
+//2021/03/22 23:53 ~ 00:02
+//2021/04/22 14:02 ~ 14:18
 
 import java.util.Scanner;
 /*
@@ -26,48 +27,42 @@ public class IfEx11_내정답 {
 		System.out.println("3.콜         라 : " + price3 + "원");
 		
 		Scanner scan = new Scanner(System.in);
+		System.out.println("메뉴 선택: ");
+		int choiceMenu = scan.nextInt();
 		
-		System.out.print("메뉴를 선택해주세요: ");
-		int menu = scan.nextInt();
+		System.out.println("현금 입력: ");
+		int money = scan.nextInt();
 		
-		System.out.print("현금을 입력해주세요: ");
-		int cash = scan.nextInt();
-		
-		if(menu == 1) {
-			if(cash == price1) {
-				System.out.print("불고기 버거" + price1 + "원 입니다.");
+		System.out.println("=== 영수증 ===");
+		if(choiceMenu == 1) {
+			if(money >= price1) {
+				System.out.println("입력한 현금: " +  money);
+				System.out.println("잔돈: " +  (money - price1));
 			}
-			if(cash > price1) {
-				System.out.print("불고기 버거" + price1 + "원 입니다." + "잔돈은"+ (cash - price1) + "입니다.");
+			if(money < price1) {
+				System.out.println("현금이 부족합니다");
 			}
-			if(cash < price1) {
-				System.out.print("현금이 부족합니다!");
+		}
+		if(choiceMenu == 2) {
+			if(money >= price2) {
+				System.out.println("입력한 현금: " +  money);
+				System.out.println("잔돈: " +  (money - price2));
+			}
+			if(money < price2) {
+				System.out.println("현금이 부족합니다");
+			}
+		}
+		if(choiceMenu == 3) {
+			if(money >= price3) {
+				System.out.println("입력한 현금: " +  money);
+				System.out.println("잔돈: " +  (money - price3));
+			}
+			if(money < price3) {
+				System.out.println("현금이 부족합니다");
 			}
 		}
 		
-		if(menu == 2) {
-			if(cash == price2) {
-				System.out.print("새우 버거" + price2 + "원 입니다.");
-			}
-			if(cash > price2) {
-				System.out.print("새우 버거" + price2 + "원 입니다." + "잔돈은"+ (cash - price2) + "입니다.");
-			}
-			if(cash < price2) {
-				System.out.print("현금이 부족합니다!");
-			}
-		}
-		
-		if(menu == 3) {
-			if(cash == price3) {
-				System.out.print("콜라" + price3 + "원 입니다.");
-			}
-			if(cash > price3) {
-				System.out.print("콜라" + price3 + "원 입니다." + "잔돈은"+ (cash - price3) + "입니다.");
-			}
-			if(cash < price3) {
-				System.out.print("현금이 부족합니다!");
-			}
-		}
+	
 		
 		
 		scan.close();	
