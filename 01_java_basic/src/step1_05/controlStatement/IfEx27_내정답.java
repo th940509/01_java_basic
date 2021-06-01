@@ -1,5 +1,6 @@
 package step1_05.controlStatement;
 //2021/04/01 16:02 ~ 16:07
+
 import java.util.Scanner;
 
 /*
@@ -51,5 +52,4 @@ public class IfEx27_내정답 {
 		scan.close();
 
 	}
-
 }

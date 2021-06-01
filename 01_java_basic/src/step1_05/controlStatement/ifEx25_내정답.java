@@ -1,5 +1,6 @@
 package step1_05.controlStatement;
-//2021/04/01 15:25 ~ 
+//2021/04/01 15:25 ~ 16:40
+
 import java.util.Scanner;
 
 /*
@@ -28,7 +29,7 @@ public class ifEx25_내정답 {
 
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+Scanner scan = new Scanner(System.in);
 		
 		System.out.println("------------");
 		System.out.println("1.떡볶이");
@@ -41,23 +42,22 @@ public class ifEx25_내정답 {
 		
 		switch (getChoice) {
 		case 1:
-			System.out.println("1.쌀떡볶이 3500원");
-			System.out.println("2.밀떡볶이 3000원");
+			System.out.println("\n1.쌀떡볶이  3500원");
+			System.out.println("2.밀떡볶이  3000원");
 			break;
 		case 2:
-			System.out.println("1.찹쌀순대 3500원");
-			System.out.println("1.피순대 3500원");
+			System.out.println("\n1.찹쌀순대 3500원");
+			System.out.println("2.피순대 3500원");
 			break;
 		case 3:
-			System.out.println("1.오징어튀김 500원");
+			System.out.println("\n1.오징어튀김 500원");
 			System.out.println("2.고구마튀김 500원");
 			System.out.println("3.야채튀김 500원");
 			break;
 		default:
-			System.out.println("1 ~ 3번 중에 선택하세요.");
+			System.out.println("\n1 ~ 3번 중에 선택하세요.");
 		}
-		
+	
 		scan.close();
 	}
-
 }

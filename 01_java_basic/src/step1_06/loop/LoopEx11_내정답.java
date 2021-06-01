@@ -64,10 +64,6 @@ public class LoopEx11_내정답 {
 			
 			
 		}
-
-		
-		
 		scan.close();
-		}
-
+	}
 }

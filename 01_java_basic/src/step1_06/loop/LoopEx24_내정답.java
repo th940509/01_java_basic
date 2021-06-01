@@ -1,4 +1,5 @@
 package step1_06.loop;
+//2021/03/29 11:08 ~ 12:00
 
 /*
  * # 2차원 반복문
@@ -21,30 +22,32 @@ package step1_06.loop;
 public class LoopEx24_내정답 {
 
 	public static void main(String[] args) {
+
+		int start = 1;
+		int end = 5;
 		
-		
-		for(int i = 1; i <= 5; i ++) {
-			if(i%2 == 1) {
-				for (int j = 1; j <= 5; j++) {
-					System.out.print(j + " ");
-				}
-			}
-			if(i%2 == 0) {
-				for (int j = 10; j >= j-4; j--) {
-					System.out.println(j + " ");
-				}
-			}
-		}
+		for (int i=0; i<5; i++) {
 			
-	
-	
-	
-	
+			if (i % 2 == 0) {
+				for (int j=start; j<=end; j++) {
+					System.out.print(j + "\t");
+				}
+			}
+			else {
+				for (int j=end; j>=start; j--) {
+					System.out.print(j + "\t");
+				}
+			}
+			System.out.println();
+
+			start = end + 1;
+			end = end + 5;
+			
 		}
-		
-		
+
 	}
 
+}
 	
 
 

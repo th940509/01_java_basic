@@ -43,17 +43,5 @@ public class LoopEx04_내정답 {
 		System.out.print("총 점수는 = " + score);
 		
 		scan.close();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-
 	}
-
 }

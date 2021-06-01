@@ -1,5 +1,5 @@
 package step1_06.loop;
-//2021/03/31 00:05 ~ 
+//2021/03/31 00:05 ~ 01:35
 
 // # 삼각형 그리기
 
@@ -133,7 +133,16 @@ public class LoopEx22_내정답 {
 		 *    #
 		 */
 
-		
-		
+		k = 5;
+		for (int i=0; i<3; i++) {
+			for (int j=0; j<i; j++) {
+				System.out.print(" ");
+			}
+			for (int j=0; j<k; j++) {
+				System.out.print("#");
+			}
+			System.out.println();
+			k -= 2;
+		}
 	}
 }

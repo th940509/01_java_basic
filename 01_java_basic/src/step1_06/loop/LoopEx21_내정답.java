@@ -45,17 +45,6 @@ public class LoopEx21_내정답 {
 		k++;
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 }

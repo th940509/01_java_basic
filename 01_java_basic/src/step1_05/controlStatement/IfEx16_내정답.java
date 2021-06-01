@@ -41,11 +41,6 @@ public class IfEx16_내정답 {
 				System.out.println("땡");
 			}
 		}
-		
-		
-		
 		scan.close();
-
 	}
-
 }

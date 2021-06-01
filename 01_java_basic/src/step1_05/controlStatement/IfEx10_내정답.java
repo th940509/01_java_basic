@@ -1,7 +1,7 @@
 package step1_05.controlStatement;
 //2021/03/19 16:56 ~ 17:12
 //2021/03/22 23:41 ~ 23:51(else사용)
-//2021/04/22 13:53 ~ 14:01
+//2021/04/22 13:53 ~ 14:01(ift사용)
 /*
  * # 로그인[3단계]
  * 
@@ -38,10 +38,6 @@ public class IfEx10_내정답 {
 		if(dbId != id) {
 			System.out.println("ID를 확인해주세요");
 		}
-		
-		
-		
-		
 		scan.close();
 		}
 			

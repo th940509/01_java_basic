@@ -1,5 +1,5 @@
 package step1_05.controlStatement;
-//2021/03/23 1:7 ~ 1:30
+//2021/03/23 1:07 ~ 1:30
 
 import java.util.Random;
 import java.util.Scanner;
@@ -47,11 +47,6 @@ public class IfEx23_내정답 {
 		else {
 			System.out.println("틀렸습니다");
 		}
-		
-		
 		scan.close();
-		
-		
 	}
-
 }
