@@ -37,11 +37,7 @@ public class IfEx09_내정답 {
 				System.out.println("놀이기구를 이용할 수 없다.");
 			}
 		 }
-			 
 			 scan.close();
-			 
 		 }
-		 
-	
 	}
 

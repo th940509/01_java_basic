@@ -40,7 +40,5 @@ public class IfEx12_내정답 {
 		System.out.println("가장 큰수: " + maxNum);
 		
 		scan.close();
-		
 	}
-
 }

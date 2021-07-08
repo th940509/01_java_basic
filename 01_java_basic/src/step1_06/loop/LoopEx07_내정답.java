@@ -56,8 +56,5 @@ public class LoopEx07_내정답 {
 		
 		scan.close();
 		
-
-		
 	}
-
 }

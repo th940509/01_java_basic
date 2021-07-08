@@ -47,5 +47,4 @@ public class IfEx22_내정답 {
 		
 		scan.close();	
 	}
-
 }

@@ -41,7 +41,5 @@ public class IfEx14_내정답 {
 		}
 	}
 		scan.close();
-		
 	}
-
 }

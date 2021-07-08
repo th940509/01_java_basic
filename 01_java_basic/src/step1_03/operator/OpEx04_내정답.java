@@ -1,5 +1,4 @@
 package step1_03.operator;
-
 //2021/03/18 15:26 ~ 15:41 (문제1-2) 15:50 ~ 15:59 (문제3)
 //2021/04/21 14:15 ~ 14:20
 
@@ -33,8 +32,6 @@ public class OpEx04_내정답 {
         int fiftyThousand = 50000;
         
         System.out.println((((money % fiftyThousand) % tenThousand) % fiveThousand) > 3*(thousand));
-       
-        
 
 	}
 

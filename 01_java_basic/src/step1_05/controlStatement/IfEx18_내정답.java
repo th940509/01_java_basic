@@ -47,9 +47,6 @@ public class IfEx18_내정답 {
 		else if ((me == 2) && (com ==1)) {
 			System.out.println("이겼습니다!");
 		}
-		
 		scan.close();
-		
-
 	}
 }

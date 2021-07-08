@@ -61,13 +61,6 @@ public class IfEx11_내정답 {
 				System.out.println("현금이 부족합니다");
 			}
 		}
-		
-	
-		
-		
 		scan.close();	
-		
-		
-
 	}
 }

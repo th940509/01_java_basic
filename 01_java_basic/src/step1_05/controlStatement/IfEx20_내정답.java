@@ -37,5 +37,4 @@ public class IfEx20_내정답 {
 		
 		scan.close();	
 	}
-
 }

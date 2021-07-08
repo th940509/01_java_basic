@@ -36,7 +36,6 @@ public class LoopEx06_내정답 {
 		}
 		
 		scan.close();
-
 	}
 
 }

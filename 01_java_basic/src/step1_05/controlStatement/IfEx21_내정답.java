@@ -51,7 +51,5 @@ public class IfEx21_내정답 {
 		if(count == 2) {
 			System.out.println("짝짝");
 		}
-		
-
 	}
 }

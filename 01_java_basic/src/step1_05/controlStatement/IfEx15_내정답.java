@@ -25,11 +25,6 @@ public class IfEx15_내정답 {
 	} else {
 		System.out.println("꽝");
 	}
-		
-		
-		
-		
-		
+	
 	}
-
 }

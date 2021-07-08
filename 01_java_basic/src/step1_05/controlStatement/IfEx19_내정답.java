@@ -46,10 +46,5 @@ public class IfEx19_내정답 {
 		else if (accountNumber != yourAcc) {System.out.println("계좌번호가 틀립니다!");}
 		
 		scan.close();
-		
-		
-		
-		
 	}
-
 }
